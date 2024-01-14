@@ -3,8 +3,8 @@
     Chapter case
 
     Tinley Xeriscapes
-    Author: 
-    Date:   
+    Author: Nadia Gainer
+    Date: 
 
     Filename: js01b.js
 */

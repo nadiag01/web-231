@@ -2,8 +2,8 @@
     Chapter 1
     Hands-On Project 1-2
 
-    Author: 
-    Date:   
+    Author: Nadia Gainer
+    Date: 01/13/24  
 
     Filename: project01-02.js
 */
