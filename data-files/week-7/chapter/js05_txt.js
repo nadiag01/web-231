@@ -4,11 +4,41 @@
       Chapter Case
 
       Application to generate a slide show
-      Author: 
-      Date:   
+      Author: Nadia Gainer
+      Date: 2/25/24
 
       Filename: js05.js
 */
+
+//image variable//
+let images = document.getElementsByTagName("img");
+
+//photo bucket variable//
+let photoBucket = document.getElementsById("photo_bucket";
+
+//photo list variable//
+let photoList = document.getElementById("photo_list");
+
+
+//for loop for items in images collection// 
+for (let imgCntr = 0; imgCntr < images.length; imgCntr++) {
+  
+    //onclick event added//
+images[imgCntr].onclick = function() {
+  if (this.parentElement.id == "photo_bucket") {
+            let newItem = document.createElement("li");
+            newItem.appendChild(this);
+            photoList.append(newItem);
+  } else {
+    // Getting the parent element of the clicked image
+   let oldItem = this.parentElement;
+   // Appending the clicked image back to the photo bucket
+  photoBucket.appendChild(this);
+   // Removing the old item from its parent element
+  oldItem.parentElement.removeChild(oldItem);
+        }
+    };
+}
 
 window.addEventListener("load", setupGallery);
 
